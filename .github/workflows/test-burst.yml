@@ -1,18 +1,43 @@
 name: test-burst
-# Sends 5 test notifications, one every 2 minutes, to prove the alerts reach your phone.
+# Proof it works: runs a REAL scan of CSUF's class search 5 times, 2 minutes apart,
+# and sends you each live result.
 on: workflow_dispatch
 jobs:
   burst:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Send test alerts
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests pyyaml beautifulsoup4
+      - name: Live scans
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
-          for i in 1 2 3 4 5; do
-            curl -s -H "Title: Seat watch test $i of 5" -H "Priority: high" -H "Tags: bell" \
-              -d "Test alert $i/5 at $(TZ=America/Los_Angeles date +%I:%M%p). Seat watch is running." \
-              "https://ntfy.sh/$NTFY_TOPIC" > /dev/null && echo "sent $i"
-            [ $i -lt 5 ] && sleep 120
-          done
+          python - <<'PY'
+          import os, time, requests, yaml
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import csuf
+          cfg = yaml.safe_load(open("watch.yaml"))
+          for i in range(1, 6):
+              t = datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%I:%M %p")
+              lines = []
+              for c in cfg["classes"]:
+                  try:
+                      res = csuf.search(cfg["term"], c["subject"], str(c["catalog"]))
+                      for nbr, info in res.items():
+                          mark = "<-- watching" if nbr in (c.get("sections") or []) else ""
+                          lines.append(f"#{nbr} sec {info['section'].split('-')[0]}: {info['status']} {mark}".strip())
+                  except Exception as e:
+                      lines.append(f"scan failed: {e}")
+              msg = f"Live scan at {t} - {c['subject']} {c['catalog']}, {cfg['term']}:\n" + "\n".join(lines)
+              print(msg)
+              requests.post("https://ntfy.sh/", json={"topic": os.environ["NTFY_TOPIC"],
+                            "title": f"Seat watch scan {i} of 5", "message": msg, "priority": 4,
+                            "tags": ["mag"]}, timeout=20)
+              if i < 5:
+                  time.sleep(120)
+          PY
