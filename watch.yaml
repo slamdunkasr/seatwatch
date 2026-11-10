@@ -1,0 +1,6 @@
+# Classes to watch. Alerts fire when a watched section changes to Open or Wait List.
+term: "Spring 2027"
+classes:
+  - subject: ISDS
+    catalog: "402"
+    sections: ["12319"]   # class numbers to alert on; leave [] to alert on any section
