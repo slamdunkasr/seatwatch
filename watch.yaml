@@ -1,4 +1,5 @@
-# Classes to watch. Alerts fire when a watched section changes to Open or Wait List.
+# Classes to watch. Alerts fire right away when a watched section changes to Open or Wait List,
+# and a status notification is sent every 4 hours (HEARTBEAT_HOURS) so you know it is still checking.
 term: "Spring 2027"
 classes:
   - subject: ISDS
