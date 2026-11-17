@@ -1,0 +1,40 @@
+name: peek
+# Saves exactly what the watcher sees on CSUF's class search (raw page + parsed statuses)
+# so you can confirm it's reading the right classes. Run it from the Actions tab.
+on: workflow_dispatch
+jobs:
+  peek:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests pyyaml beautifulsoup4
+      - name: Snapshot class search
+        run: |
+          mkdir -p peek
+          python - <<'PY'
+          import json, yaml
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import csuf
+          cfg = yaml.safe_load(open("watch.yaml"))
+          out = {"checked_at": datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%a %b %d, %I:%M %p PT"),
+                 "term": cfg["term"], "classes": []}
+          for c in cfg["classes"]:
+              dbg = {}
+              res = csuf.search(cfg["term"], c["subject"], str(c["catalog"]), debug=dbg)
+              tag = f"{c['subject']}-{c['catalog']}"
+              open(f"peek/{tag}.html", "w").write(dbg.get("result_html", ""))
+              out["classes"].append({"class": f"{c['subject']} {c['catalog']}", "watching": c.get("sections") or [],
+                                     "sections": res})
+              print(tag, json.dumps(res, indent=1))
+          json.dump(out, open("peek/summary.json", "w"), indent=1)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: peek
+          path: peek/
+          retention-days: 3
