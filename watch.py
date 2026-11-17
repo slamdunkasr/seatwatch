@@ -62,7 +62,7 @@ def check_once():
             seen.append((name, status))
             if prev != status:
                 need_save = True
-            if first:
+            if first or prev is None:
                 push(f"Seat watch on: {name}", f"Now watching. Current status: {status}. "
                      "You'll get an alert when it opens.", priority="default", tags=("eyes",),
                      click=csuf.URL)

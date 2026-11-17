@@ -5,3 +5,6 @@ classes:
   - subject: ISDS
     catalog: "402"
     sections: ["12319"]   # class numbers to alert on; leave [] to alert on any section
+  - subject: MKTG
+    catalog: "379"
+    sections: ["12367"]
