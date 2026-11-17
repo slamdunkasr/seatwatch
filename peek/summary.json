@@ -1,0 +1,62 @@
+{
+ "checked_at": "Tue Nov 17, 08:45 AM PT",
+ "term": "Spring 2027",
+ "classes": [
+  {
+   "class": "ISDS 402",
+   "watching": [
+    "12319"
+   ],
+   "sections": {
+    "12332": {
+     "section": "01-DIS Regular",
+     "status": "Open"
+    },
+    "12608": {
+     "section": "02-DIS Regular",
+     "status": "Closed"
+    },
+    "12319": {
+     "section": "50-DIS Regular",
+     "status": "Closed"
+    },
+    "13013": {
+     "section": "51-DIS Regular",
+     "status": "Closed"
+    }
+   }
+  },
+  {
+   "class": "MKTG 379",
+   "watching": [
+    "12367"
+   ],
+   "sections": {
+    "12279": {
+     "section": "01-DIS Regular",
+     "status": "Closed"
+    },
+    "12245": {
+     "section": "02-DIS Regular",
+     "status": "Closed"
+    },
+    "13037": {
+     "section": "05-DIS Regular",
+     "status": "Open"
+    },
+    "22239": {
+     "section": "07-DIS Regular",
+     "status": "Closed"
+    },
+    "12367": {
+     "section": "50-DIS Regular",
+     "status": "Closed"
+    },
+    "12604": {
+     "section": "51-DIS Regular",
+     "status": "Closed"
+    }
+   }
+  }
+ ]
+}

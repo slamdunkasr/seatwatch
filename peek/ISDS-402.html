@@ -1,0 +1,1017 @@
+var oWin=window;
+ var oDoc = window.document;
+oWin.strCurrUrl='https://cmsweb.fullerton.edu/psc/CFULPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?&PAGE=SSR_CLSRCH_RSLT';
+oWin.strReqURL='';
+bPTActEnterKey = false;
+
+oWin.gridRowSelRgbColor_win0 ='rgb(238,238,238)';
+
+var pt_pageinfo = document.getElementById('pt_pageinfo_win0');
+if (pt_pageinfo) {
+pt_pageinfo.setAttribute('Page', 'SSR_CLSRCH_RSLT');
+pt_pageinfo.setAttribute('Component', 'CLASS_SEARCH');
+pt_pageinfo.setAttribute('Menu', 'SA_LEARNER_SERVICES');
+pt_pageinfo.setAttribute('Mode', 'CLASSIC');
+}
+
+ g_bAccessibilityMode=false;
+var actn='';
+var oWin=window;
+var oDoc=document;
+actn=oDoc.win0.ICAction.value;
+oDoc.win0.ICAction.value='None';
+oDoc.win0.ICResubmit.value='0';
+oWin.nResubmit='0';
+oDoc.win0.ICStateNum.value=3;initVars_win0();
+if (typeof resetVars_win0 == "function")resetVars_win0();
+oDoc.win0.ICFocus.value='';
+setupTimeout2();
+if (!isCrossDomainTop()) top.document.title=document.title;
+if (typeof openSmartPromptDb === 'function') openSmartPromptDb();
+ptEvent.add(window,'scroll',positionWAIT_win0);
+ptCommonObj2.generateABNSearchResults(document.win0);
+getGblSrchPageNum(actn);
+if (gSrchRsltPageNum <= 5) getAllRelatedActions();
+
+if (typeof(myAppsWindowOpenJS) != 'undefined' && myAppsWindowOpenJS != null && myAppsWindowOpenJS != '')
+ {
+try {eval(myAppsWindowOpenJS);} catch(e) {}
+  myAppsWindowOpenJS=null;
+}
+if (typeof(HelppopupObj_win0) != 'undefined' && HelppopupObj_win0 != null)
+ HelppopupObj_win0.StopPopup('win0');
+if (typeof(ptLongEditCounter) != 'undefined' && ptLongEditCounter != null)
+   ptLongEditCounter.onLoadLongEditCounter();
+ResetGlyph_win0();
+self.scroll(0,0);
+if (typeof ptGridObj_win0 != 'undefined' && ptGridObj_win0)
+ ptGridObj_win0.clearGridArr();
+objToBeFocus = null;
+if (bPTDrag) CancelDragAccessible();
+ bPTDrag = false;
+if (typeof oWin == 'undefined') setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+ else
+ oWin.setEventHandlers_win0('ICFirstAnchor_win0', 'ICLastAnchor_win0', false);
+setFocus_win0('DERIVED_SSTSNAV_SSTS_NAV_TABS_DIS',-1);
+ptLoadingStatus_empty(0);
+setupTimeout2();
+processing_win0(0,3000);if (typeof reOrderSmartSelects === 'function') {
+    reOrderSmartSelects('CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH','Y','N','Y');
+}
+
+<input type='hidden' name='ICType' id='ICType' value='Panel' />
+<input type='hidden' name='ICElementNum' id='ICElementNum' value='0' />
+<input type='hidden' name='ICStateNum' id='ICStateNum' value='3' />
+<input type='hidden' name='ICAction' id='ICAction' value='None' />
+<input type='hidden' name='ICModelCancel' id='ICModelCancel' value='0' />
+<input type='hidden' name='ICXPos' id='ICXPos' value='0' />
+<input type='hidden' name='ICYPos' id='ICYPos' value='0' />
+<input type='hidden' name='ResponsetoDiffFrame' id='ResponsetoDiffFrame' value='-1' />
+<input type='hidden' name='TargetFrameName' id='TargetFrameName' value='None' />
+<input type='hidden' name='FacetPath' id='FacetPath' value='None' />
+<input type='hidden' name='TA_BuildChoices' id='TA_BuildChoices' value='1' />
+<input type='hidden' name='SP_FldName' id='SP_FldName' value='' />
+<input type='hidden' name='SP_FldValues' id='SP_FldValues' value='' />
+<input type='hidden' name='PrmtTbl' id='PrmtTbl' value='' />
+<input type='hidden' name='PrmtTbl_fn' id='PrmtTbl_fn' value='' />
+<input type='hidden' name='PrmtTbl_fv' id='PrmtTbl_fv' value='' />
+<input type='hidden' name='TA_SkipFldNms' id='TA_SkipFldNms' value='' />
+<input type='hidden' name='ICFocus' id='ICFocus' value='' />
+<input type='hidden' name='ICSaveWarningFilter' id='ICSaveWarningFilter' value='0' />
+<input type='hidden' name='ICChanged' id='ICChanged' value='-1' />
+<input type='hidden' name='ICSkipPending' id='ICSkipPending' value='0' />
+<input type='hidden' name='ICAutoSave' id='ICAutoSave' value='0' />
+<input type='hidden' name='ICResubmit' id='ICResubmit' value='0' />
+<input type='hidden' name='ICSID' id='ICSID' value='ylgXrIc256R2PwePnqyUh9TzaCZ3cLfxL/pOV+AYkgY=' />
+<input type='hidden' name='ICActionPrompt' id='ICActionPrompt' value='false' />
+<input type='hidden' name='EnableSmartPrompt' id='EnableSmartPrompt' value='0' />
+<input type='hidden' name='EnableSmartSelect' id='EnableSmartSelect' value='0' />
+<input type='hidden' name='ICBcDomData' id='ICBcDomData' value='' />
+<input type='hidden' name='ICPanelName' id='ICPanelName' value='' />
+<input type='hidden' name='ICFind' id='ICFind' value='' />
+<input type='hidden' name='ICAddCount' id='ICAddCount' value='' />
+<input type='hidden' name='ICAppClsData' id='ICAppClsData' value='' />
+
+
+
+<table class='PSPAGECONTAINER' role='main' aria-labelledby='app_label'><tr><td>
+<DIV class='ps_pspagecontainer' id='win0divPSPAGECONTAINER'><table role='presentation'  border='0' id='ACE_width' cellpadding='0' cellspacing='0' class='PSPAGECONTAINER' cols='14' width='2019'>
+<tr>
+<td width='0' height='3'></td>
+<td width='5'></td>
+<td width='10'></td>
+<td width='6'></td>
+<td width='275'></td>
+<td width='211'></td>
+<td width='211'></td>
+<td width='10'></td>
+<td width='5'></td>
+<td width='85'></td>
+<td width='30'></td>
+<td width='869'></td>
+<td width='171'></td>
+<td width='127'></td>
+</tr>
+<tr>
+<td height='161'></td>
+<td colspan='9'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_GROUPBOX1'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='795'>
+<tr><td width='793'>
+<table role='presentation'  border='0' id='ACE_DERIVED_CLSRCH_GROUPBOX1' cellpadding='0' cellspacing='0' cols='3' width='816' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='800'></td>
+<td width='12'></td>
+</tr>
+<tr>
+<td height='149'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_GROUP_BOX'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='776'>
+<tr><td width='773'>
+<table role='presentation'  border='0' id='ACE_DERIVED_REGFRM1_GROUP_BOX' cellpadding='0' cellspacing='0' cols='4' width='796' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='11'></td>
+<td width='553'></td>
+<td width='227'></td>
+</tr>
+<tr>
+<td height='121'></td>
+<td colspan='3'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_SSTSNAV_GROUP_BOX'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='785'>
+<tr><td width='783'>
+<table role='presentation'  border='0' id='ACE_DERIVED_SSTSNAV_GROUP_BOX' cellpadding='0' cellspacing='0' cols='6' width='806' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='8' height='0'></td>
+<td width='2'></td>
+<td width='280'></td>
+<td width='446'></td>
+<td width='30'></td>
+<td width='37'></td>
+</tr>
+<tr>
+<td height='19' colspan='2'></td>
+<td colspan='4'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_SSTSNAV_PERSON_NAME'><span  class='PALEVEL0PRIMARY' id='DERIVED_SSTSNAV_PERSON_NAME' >&nbsp;</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='11' colspan='3'></td>
+<td colspan='3'  valign='top' align='left'>
+<DIV    id='win0divCSU_DA_PB_WK_EMPLID'><span  class='PSEDITBOX_DISPONLY' id='CSU_DA_PB_WK_EMPLID' >&nbsp;</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='24'></td>
+<td colspan='4'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_SSTSNAV_SSTS_NAV_TABS_DIS'><div  style="width:791px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+<tr>
+<td height='28'></td>
+<td colspan='4'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_SSTSNAV_SSTS_NAV_STABS_DIS'><div  style="width:791px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+<tr>
+<td height='11' colspan='2'></td>
+<td colspan='2' rowspan='2'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_SS_TRANSACT_TITLE'><span role='heading' aria-level='1' id='app_label' class = 'PATRANSACTIONTITLE'id='DERIVED_REGFRM1_SS_TRANSACT_TITLE' >Search for Classes</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='23' colspan='2'></td>
+<td colspan='2' nowrap='nowrap'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_STEP3'><a name='DERIVED_REGFRM1_STEP3' id='DERIVED_REGFRM1_STEP3' tabindex='29' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'DERIVED_REGFRM1_STEP3');"><img src='/cs/CFULPRD/86210/PS_CS_STEP03_DIS_ICN_1.gif' id='DERIVED_REGFRM1_STEP3$IMG'  alt='Step 3' title='Step 3' border='0' /></a></DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='7' colspan='4'></td>
+</tr>
+<tr>
+<td height='7' colspan='2'></td>
+<td rowspan='2'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_TITLE1'><span  class='PAPAGETITLE' id='DERIVED_REGFRM1_TITLE1' >Search Results</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='13' colspan='2'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divCSU_DA_UI_WK_EMPLID'><span  class='PSEDITBOX_DISPONLY' id='CSU_DA_UI_WK_EMPLID' >&nbsp;</span>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='7' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='14'></td>
+</tr>
+<tr>
+<td height='31' colspan='4'></td>
+<td colspan='10'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_SSS_PAGE_KEYDESCR'><span  class='PSEDITBOX_DISPONLY' id='DERIVED_CLSRCH_SSS_PAGE_KEYDESCR' >CSU Fullerton | Spring 2027</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='44' colspan='3'></td>
+<td colspan='5'  valign='top' align='left'>
+<DIV    id='win0div$ICField94'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='692'>
+<tr><td width='690'>
+<table role='presentation'  border='0' id='ACE_$ICField94' cellpadding='0' cellspacing='0' cols='3' width='711' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='694'></td>
+<td width='12'></td>
+</tr>
+<tr>
+<td height='38'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_SSR_CLSRCH_CRIT'><div  style="width:723px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<table class="PSEDITBOX_DISPONLY"><tr><td>The following classes match your search criteria Course Subject: <strong>Info Systems & Decision Sci</strong>,&nbsp;&nbsp;Course Number is exactly '<strong>402</strong>',&nbsp;&nbsp;Course Career: <strong>Undergraduate</strong>,&nbsp;&nbsp;Show Open Classes Only: <strong>No</strong></td></tr></table>
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='14'></td>
+</tr>
+<tr>
+<td height='52' colspan='2'></td>
+<td colspan='11'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_DESCR1'><table cellpadding='2' cellspacing='0' cols='1'  class='PSGROUPBOXWBO'  width='1020'>
+<tr><td class='PAGROUPBOXLABELINVISIBLE'  align='left'>Descr</td></tr>
+<tr><td width='1015'>
+<table role='presentation'  border='0' id='ACE_DERIVED_REGFRM1_DESCR1' cellpadding='0' cellspacing='0' cols='13' width='1046' class='PSGROUPBOX PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='289' height='0'></td>
+<td width='31'></td>
+<td width='7'></td>
+<td width='1'></td>
+<td width='5'></td>
+<td width='75'></td>
+<td width='31'></td>
+<td width='1'></td>
+<td width='2'></td>
+<td width='5'></td>
+<td width='110'></td>
+<td width='478'></td>
+<td width='6'></td>
+</tr>
+<tr>
+<td height='3'></td>
+<td rowspan='4'  valign='top' align='left'>
+<DIV    id='win0div$ICField24'><img src=/cs/CFULPRD/86210/FUL_BOOK_1.JPG width='23' height='22' alt='Textbook' title='Textbook' class='PSSTATICIMAGE' />
+</DIV></td>
+<td colspan='4' rowspan='2'></td>
+<td rowspan='4'  valign='top' align='left'>
+<DIV    id='win0div$ICField28'><img src=/cs/CFULPRD/86210/FUL_SYLLABUS_1.JPG width='23' height='22' alt='Syllabus' title='Syllabus' class='PSSTATICIMAGE' />
+</DIV></td>
+</tr>
+<tr>
+<td height='1'></td>
+<td colspan='4'></td>
+<td rowspan='2'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_REGFRM1_SSR_WAIT_LIST_ON'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='463'>
+<tr><td width='460'>
+<table role='presentation'  border='0' id='ACE_DERIVED_REGFRM1_SSR_WAIT_LIST_ON' cellpadding='0' cellspacing='0' cols='10' width='474' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='20'></td>
+<td width='55'></td>
+<td width='55'></td>
+<td width='20'></td>
+<td width='65'></td>
+<td width='70'></td>
+<td width='20'></td>
+<td width='146'></td>
+<td width='17'></td>
+</tr>
+<tr>
+<td height='17'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField2'><img src=/cs/CFULPRD/86210/PS_CS_STATUS_OPEN_ICN_1.gif width='16' height='16' alt='Open' title='Open' class='PSSTATICIMAGE' />
+</DIV></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField3'><span  class='PSTEXT' >Open</span>
+</DIV></td>
+<td></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField4'><img src=/cs/CFULPRD/86210/PS_CS_STATUS_CLOSED_ICN_1.gif width='16' height='16' alt='Closed' title='Closed' class='PSSTATICIMAGE' />
+</DIV></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField5'><span  class='PSTEXT' >Closed</span>
+</DIV></td>
+<td></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField6'><img src=/cs/CFULPRD/86210/PS_CS_STATUS_WAITLIST_ICN_1.JPG width='18' height='18' alt='Wait List' title='Wait List' class='PSSTATICIMAGE' />
+</DIV></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField7'><span  class='PSTEXT' >Wait List</span>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='18'></td>
+<td colspan='2' rowspan='2'></td>
+<td colspan='2' rowspan='3'  valign='top' align='left'>
+<DIV    id='win0div$ICField25'><span  class='PSTEXT' >Textbook</span>
+</DIV></td>
+<td colspan='2' rowspan='2'></td>
+<td colspan='2' rowspan='3'  valign='top' align='left'>
+<DIV    id='win0div$ICField$30$'><span  class='PSTEXT' >Syllabus</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='3'></td>
+</tr>
+<tr>
+<td height='4'></td>
+<td colspan='2' rowspan='2'  valign='top' align='left'>
+<DIV    id='win0div$ICField26'><img src=/cs/CFULPRD/86210/FUL_0COST_1.JPG width='29' height='21' alt='Zero Cost' title='Zero Cost' class='PSSTATICIMAGE' />
+</DIV></td>
+<td rowspan='3'></td>
+<td colspan='2' rowspan='3'  valign='top' align='left'>
+<DIV    id='win0div$ICField30'><img src=/cs/CFULPRD/86210/FUL_NOTES_1.JPG width='24' height='22' alt='Instructor notes' title='Instructor notes' class='PSSTATICIMAGE' />
+</DIV></td>
+</tr>
+<tr>
+<td height='18'></td>
+<td rowspan='2'></td>
+<td rowspan='2'  valign='top' align='left'>
+<DIV    id='win0div$ICField$28$'><span  class='PSTEXT' >Zero Cost</span>
+</DIV></td>
+<td colspan='2' rowspan='2'></td>
+<td colspan='3' rowspan='2'  valign='top' align='left'>
+<DIV    id='win0div$ICField$32$'><span  class='PSTEXT' >Instructor Notes</span>
+</DIV></td>
+</tr>
+<tr>
+<td height='0' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='14'></td>
+</tr>
+<tr>
+<td height='42'></td>
+<td colspan='8'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_GROUP5'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='712'>
+<tr><td width='710'>
+<table role='presentation'  border='0' id='ACE_DERIVED_CLSRCH_GROUP5' cellpadding='0' cellspacing='0' cols='4' width='731' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='295' height='0'></td>
+<td width='211'></td>
+<td width='211'></td>
+<td width='12'></td>
+</tr>
+<tr>
+<td height='28'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField$3$'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='204'>
+<tr><td width='201'>
+<table role='presentation'  border='0' id='ACE_$ICField$3$' cellpadding='0' cellspacing='0' cols='2' width='207' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='203'></td>
+</tr>
+<tr>
+<td height='23'></td>
+<td nowrap='nowrap'  valign='top' align='left'>
+<DIV    id='win0divCLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH'><a role='presentation' class='PSPUSHBUTTON Left' onclick='javascript:if(event.target.id == this.firstChild.firstChild.id) { return true; } else return((this.firstChild &amp;&amp; this.firstChild.firstChild) != null ? this.firstChild.firstChild.click() : false);'><span style='background-Color: transparent;'><input type='button' name='CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH' id='CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH' tabindex='387' value='New Search'  class='PSPUSHBUTTON' style='width:185px; ' onclick="submitAction_win0(document.win0,this.id,event);" title='Start a New Search'  /></span></a></DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField$5$'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='204'>
+<tr><td width='201'>
+<table role='presentation'  border='0' id='ACE_$ICField$5$' cellpadding='0' cellspacing='0' cols='2' width='207' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='8' height='0'></td>
+<td width='198'></td>
+</tr>
+<tr>
+<td height='23'></td>
+<td nowrap='nowrap'  valign='top' align='left'>
+<DIV    id='win0divCLASS_SRCH_WRK2_SSR_PB_MODIFY'><a role='presentation' class='PSPUSHBUTTON Left' onclick='javascript:if(event.target.id == this.firstChild.firstChild.id) { return true; } else return((this.firstChild &amp;&amp; this.firstChild.firstChild) != null ? this.firstChild.firstChild.click() : false);'><span style='background-Color: transparent;'><input type='button' name='CLASS_SRCH_WRK2_SSR_PB_MODIFY' id='CLASS_SRCH_WRK2_SSR_PB_MODIFY' tabindex='388' value='Modify Search'  class='PSPUSHBUTTON' style='width:185px; ' onclick="submitAction_win0(document.win0,this.id,event);" /></span></a></DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='9' colspan='4'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='318'></td>
+<td colspan='11'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_GROUP6'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1670'>
+<tr><td width='1668'>
+<table role='presentation'  border='0' id='ACE_DERIVED_CLSRCH_GROUP6' cellpadding='0' cellspacing='0' cols='3' width='1718' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='1701'></td>
+<td width='12'></td>
+</tr>
+<tr>
+<td height='304'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX1'><table cellpadding='2' cellspacing='0' cols='1'  class='PSGROUPBOXWBO'  width='1652'>
+<tr><td class='PSGROUPBOXLABEL'  align='left'>4 class section(s) found</td></tr>
+<tr><td width='1647'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX1' cellpadding='0' cellspacing='0' cols='3' width='1696' class='PSGROUPBOX PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1698'></td>
+<td width='1'></td>
+</tr>
+<tr>
+<td height='286'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField$4$$0'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  id='$ICField$4$$scroll$0' onclick="getScrollTableId('$ICField$4$$scroll$0')" width='1648'>
+<tr><td width='1646'>
+<table role='presentation'  border='0' id='ACE_$ICField$4$$0' cellpadding='0' cellspacing='0' cols='3' width='1695' class='PABACKGROUNDINVISIBLE' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1694'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='287'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX2$0'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1645'>
+<tr><td class='PSGROUPBOXLABEL' onclick='javascript:if(event.target.id == this.firstElementChild.firstElementChild.id) { return true; } else return((this.firstElementChild &amp;&amp; this.firstElementChild.firstElementChild) != null ? this.firstElementChild.firstElementChild.click() : false);'  align='left'><DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX2GP$0'><a class='PSHYPERLINK PTCOLLAPSE_ARROW' title='Collapse section ISDS 402 - Database Management Systems' name='SSR_CLSRSLT_WRK_GROUPBOX2$0' id='SSR_CLSRSLT_WRK_GROUPBOX2$0' tabindex='403' href="javascript:submitAction_win0(document.win0,'SSR_CLSRSLT_WRK_GROUPBOX2$0');" aria-expanded='true' role='button'><img src='/cs/CFULPRD/86210/PT_TRANS_PIX_1.png' class='PTCOLLAPSE' alt='ISDS 402 - Database Management Systems Collapsible section' border='0' /></a>&nbsp;ISDS 402 - Database Management Systems&nbsp;</DIV></td></tr>
+<tr><td width='1642'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX2$0' cellpadding='0' cellspacing='0' cols='3' width='1691' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1690'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='272'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField48$0'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  id='$ICField48$scroll$0' onclick="getScrollTableId('$ICField48$scroll$0')" width='1641'>
+<tr><td width='1638'>
+<table role='presentation'  border='0' id='ACE_$ICField48$0' cellpadding='0' cellspacing='0' cols='3' width='1688' class='PABACKGROUNDINVISIBLE' style='border-style:none' >
+<tr>
+<td width='0' height='3'></td>
+<td width='1686'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='64'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX3$0'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1637'>
+<tr><td width='1635'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX3$0' cellpadding='0' cellspacing='0' cols='3' width='1684' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1683'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='55'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRCH_MTG1$0'><div class='PTCPGRIDTITLE' onclick='javascript:if(event.target.id == this.firstElementChild.firstElementChild.id) { return true; } else return((this.firstElementChild &amp;&amp; this.firstElementChild.firstElementChild) != null ? this.firstElementChild.firstElementChild.click() : false);'  align='left' >  </div>
+<table cellspacing='0' class='PSLEVEL1GRIDNBONBO'  id='SSR_CLSRCH_MTG1$scroll$0' dir='ltr' cols='13' width='1959' cellpadding='2'>
+<tr>
+<th scope='col' width='30' align='left' class='PSLEVEL1GRIDCOLUMNHDR PSGRIDFIRSTCOLUMN' ><a name='SSR_CLSRCH_MTG1$srt0$0' id='SSR_CLSRCH_MTG1$srt0$0' role='button' tabindex='432' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt0$0');" title="Click to sort ascending">Class</a></th>
+<th scope='col' width='80' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt1$0' id='SSR_CLSRCH_MTG1$srt1$0' role='button' tabindex='433' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt1$0');" title="Click to sort ascending">Section</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt2$0' id='SSR_CLSRCH_MTG1$srt2$0' role='button' tabindex='434' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt2$0');" title="Click to sort ascending">Days &amp; Times</a></th>
+<th scope='col' width='91' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt3$0' id='SSR_CLSRCH_MTG1$srt3$0' role='button' tabindex='435' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt3$0');" title="Click to sort ascending">Room</a></th>
+<th scope='col' width='103' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt4$0' id='SSR_CLSRCH_MTG1$srt4$0' role='button' tabindex='436' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt4$0');" title="Click to sort ascending">Instruction Mode</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt5$0' id='SSR_CLSRCH_MTG1$srt5$0' role='button' tabindex='437' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt5$0');" title="Click to sort ascending">Instructor</a></th>
+<th scope='col' width='94' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt6$0' id='SSR_CLSRCH_MTG1$srt6$0' role='button' tabindex='438' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt6$0');" title="Click to sort ascending">Meeting Dates</a></th>
+<th scope='col' width='41' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt7$0' id='SSR_CLSRCH_MTG1$srt7$0' role='button' tabindex='439' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt7$0');" title="Click to sort ascending">Status</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' >&nbsp;</th>
+<th scope='col' width='67' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Textbooks</th>
+<th scope='col' width='57' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Syllabus</th>
+<th scope='col' width='103' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Instructor Notes</th>
+<th scope='col' width='102' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt13$0' id='SSR_CLSRCH_MTG1$srt13$0' role='button' tabindex='445' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt13$0');" title="Click to sort ascending">Instructor Email</a></th>
+</tr>
+<tr id='trSSR_CLSRCH_MTG1$0_row1' bufnum='0' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSSR_CLSRCH_MTG1$0_row1');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSSR_CLSRCH_MTG1$0_row1');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSSR_CLSRCH_MTG1$0_row1');">
+<td align='left'  height='35' class='PSLEVEL3GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    id='win0divMTG_CLASS_NBR$0'><span id='MTG_CLASS_NBR$span$0'  class='PSHYPERLINK'  title='Class Nbr' ><a name='MTG_CLASS_NBR$0' id='MTG_CLASS_NBR$0'  ptlinktgt='pt_peoplecode' tabindex='452' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASS_NBR$0');"  class='PSHYPERLINK' >12332</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_CLASSNAME$0'><span id='MTG_CLASSNAME$span$0'  class='PSHYPERLINK'  title='View Details' ><a name='MTG_CLASSNAME$0' id='MTG_CLASSNAME$0'  ptlinktgt='pt_peoplecode' tabindex='453' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASSNAME$0');"  class='PSHYPERLINK' >01-DIS<br />Regular</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_DAYTIME$0'><span  class='PSLONGEDITBOX' id='MTG_DAYTIME$0' >Tu 10:00AM - 11:15AM<br />Th 10:00AM - 11:15AM</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_ROOM$0'><span  class='PSLONGEDITBOX' id='MTG_ROOM$0' >Zoom<br />SGMH 2101 - Computer Lab</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divFUL_STU_SS_WRK_LONGVALUE$0'><span  class='PSEDITBOX_DISPONLY' id='FUL_STU_SS_WRK_LONGVALUE$0' >Mostly In-Person (Hybrid)</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_INSTR$0'><span  class='PSLONGEDITBOX' id='MTG_INSTR$0' >Ester Gonzalez<br />Ester Gonzalez</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_TOPIC$0'><span  class='PSLONGEDITBOX' id='MTG_TOPIC$0' >01/23/2027 - 05/14/2027<br />01/23/2027 - 05/14/2027</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_SSR_STATUS_LONG$0'><div  style="min-width:53px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<img src="/cs/CFULPRD/86210/PS_CS_STATUS_OPEN_ICN_1.gif" width="16" height="16" alt="Open" STYLE="vertical-align:middle;text-align:center;margin-left:12px">
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='center'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_DESCRLONG1$0'><div  style="min-width:133px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<p><a href = "mailto: esgonzalez@fullerton.edu">esgonzalez@fullerton.edu</A><BR>
+<a href = "mailto: esgonzalez@fullerton.edu">esgonzalez@fullerton.edu</A><BR> </p>
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+</table>
+</DIV>
+</td>
+</tr>
+<tr>
+<td height='3' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='3'></td>
+</tr>
+<tr>
+<td height='64'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX3$1'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1637'>
+<tr><td width='1635'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX3$1' cellpadding='0' cellspacing='0' cols='3' width='1684' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1683'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='55'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRCH_MTG1$1'><div class='PTCPGRIDTITLE' onclick='javascript:if(event.target.id == this.firstElementChild.firstElementChild.id) { return true; } else return((this.firstElementChild &amp;&amp; this.firstElementChild.firstElementChild) != null ? this.firstElementChild.firstElementChild.click() : false);'  align='left' >  </div>
+<table cellspacing='0' class='PSLEVEL1GRIDNBONBO'  id='SSR_CLSRCH_MTG1$scroll$1' dir='ltr' cols='13' width='1959' cellpadding='2'>
+<tr>
+<th scope='col' width='30' align='left' class='PSLEVEL1GRIDCOLUMNHDR PSGRIDFIRSTCOLUMN' ><a name='SSR_CLSRCH_MTG1$srt0$1' id='SSR_CLSRCH_MTG1$srt0$1' role='button' tabindex='624' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt0$1');" title="Click to sort ascending">Class</a></th>
+<th scope='col' width='80' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt1$1' id='SSR_CLSRCH_MTG1$srt1$1' role='button' tabindex='625' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt1$1');" title="Click to sort ascending">Section</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt2$1' id='SSR_CLSRCH_MTG1$srt2$1' role='button' tabindex='626' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt2$1');" title="Click to sort ascending">Days &amp; Times</a></th>
+<th scope='col' width='91' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt3$1' id='SSR_CLSRCH_MTG1$srt3$1' role='button' tabindex='627' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt3$1');" title="Click to sort ascending">Room</a></th>
+<th scope='col' width='103' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt4$1' id='SSR_CLSRCH_MTG1$srt4$1' role='button' tabindex='628' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt4$1');" title="Click to sort ascending">Instruction Mode</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt5$1' id='SSR_CLSRCH_MTG1$srt5$1' role='button' tabindex='629' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt5$1');" title="Click to sort ascending">Instructor</a></th>
+<th scope='col' width='94' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt6$1' id='SSR_CLSRCH_MTG1$srt6$1' role='button' tabindex='630' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt6$1');" title="Click to sort ascending">Meeting Dates</a></th>
+<th scope='col' width='41' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt7$1' id='SSR_CLSRCH_MTG1$srt7$1' role='button' tabindex='631' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt7$1');" title="Click to sort ascending">Status</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' >&nbsp;</th>
+<th scope='col' width='67' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Textbooks</th>
+<th scope='col' width='57' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Syllabus</th>
+<th scope='col' width='103' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Instructor Notes</th>
+<th scope='col' width='102' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt13$1' id='SSR_CLSRCH_MTG1$srt13$1' role='button' tabindex='637' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt13$1');" title="Click to sort ascending">Instructor Email</a></th>
+</tr>
+<tr id='trSSR_CLSRCH_MTG1$1_row1' bufnum='0' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSSR_CLSRCH_MTG1$1_row1');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSSR_CLSRCH_MTG1$1_row1');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSSR_CLSRCH_MTG1$1_row1');">
+<td align='left'  height='35' class='PSLEVEL3GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    id='win0divMTG_CLASS_NBR$1'><span id='MTG_CLASS_NBR$span$1'  class='PSHYPERLINK'  title='Class Nbr' ><a name='MTG_CLASS_NBR$1' id='MTG_CLASS_NBR$1'  ptlinktgt='pt_peoplecode' tabindex='644' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASS_NBR$1');"  class='PSHYPERLINK' >12608</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_CLASSNAME$1'><span id='MTG_CLASSNAME$span$1'  class='PSHYPERLINK'  title='View Details' ><a name='MTG_CLASSNAME$1' id='MTG_CLASSNAME$1'  ptlinktgt='pt_peoplecode' tabindex='645' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASSNAME$1');"  class='PSHYPERLINK' >02-DIS<br />Regular</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_DAYTIME$1'><span  class='PSLONGEDITBOX' id='MTG_DAYTIME$1' >TuTh 11:30AM - 12:45PM</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_ROOM$1'><span  class='PSLONGEDITBOX' id='MTG_ROOM$1' >Zoom</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divFUL_STU_SS_WRK_LONGVALUE$1'><span  class='PSEDITBOX_DISPONLY' id='FUL_STU_SS_WRK_LONGVALUE$1' >Fully Online</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_INSTR$1'><span  class='PSLONGEDITBOX' id='MTG_INSTR$1' >Ester Gonzalez</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_TOPIC$1'><span  class='PSLONGEDITBOX' id='MTG_TOPIC$1' >01/23/2027 - 05/14/2027</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_SSR_STATUS_LONG$1'><div  style="min-width:53px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<img src="/cs/CFULPRD/86210/PS_CS_STATUS_CLOSED_ICN_1.gif" width="16" height="16" alt="Closed" STYLE="vertical-align:middle;text-align:center;margin-left:12px">
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='center'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_DESCRLONG1$1'><div  style="min-width:133px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<p><a href = "mailto: esgonzalez@fullerton.edu">esgonzalez@fullerton.edu</A><BR> </p>
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+</table>
+</DIV>
+</td>
+</tr>
+<tr>
+<td height='3' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='3'></td>
+</tr>
+<tr>
+<td height='64'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX3$2'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1637'>
+<tr><td width='1635'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX3$2' cellpadding='0' cellspacing='0' cols='3' width='1684' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1683'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='55'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRCH_MTG1$2'><div class='PTCPGRIDTITLE' onclick='javascript:if(event.target.id == this.firstElementChild.firstElementChild.id) { return true; } else return((this.firstElementChild &amp;&amp; this.firstElementChild.firstElementChild) != null ? this.firstElementChild.firstElementChild.click() : false);'  align='left' >  </div>
+<table cellspacing='0' class='PSLEVEL1GRIDNBONBO'  id='SSR_CLSRCH_MTG1$scroll$2' dir='ltr' cols='13' width='1959' cellpadding='2'>
+<tr>
+<th scope='col' width='30' align='left' class='PSLEVEL1GRIDCOLUMNHDR PSGRIDFIRSTCOLUMN' ><a name='SSR_CLSRCH_MTG1$srt0$2' id='SSR_CLSRCH_MTG1$srt0$2' role='button' tabindex='816' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt0$2');" title="Click to sort ascending">Class</a></th>
+<th scope='col' width='80' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt1$2' id='SSR_CLSRCH_MTG1$srt1$2' role='button' tabindex='817' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt1$2');" title="Click to sort ascending">Section</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt2$2' id='SSR_CLSRCH_MTG1$srt2$2' role='button' tabindex='818' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt2$2');" title="Click to sort ascending">Days &amp; Times</a></th>
+<th scope='col' width='91' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt3$2' id='SSR_CLSRCH_MTG1$srt3$2' role='button' tabindex='819' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt3$2');" title="Click to sort ascending">Room</a></th>
+<th scope='col' width='103' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt4$2' id='SSR_CLSRCH_MTG1$srt4$2' role='button' tabindex='820' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt4$2');" title="Click to sort ascending">Instruction Mode</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt5$2' id='SSR_CLSRCH_MTG1$srt5$2' role='button' tabindex='821' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt5$2');" title="Click to sort ascending">Instructor</a></th>
+<th scope='col' width='94' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt6$2' id='SSR_CLSRCH_MTG1$srt6$2' role='button' tabindex='822' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt6$2');" title="Click to sort ascending">Meeting Dates</a></th>
+<th scope='col' width='41' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt7$2' id='SSR_CLSRCH_MTG1$srt7$2' role='button' tabindex='823' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt7$2');" title="Click to sort ascending">Status</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' >&nbsp;</th>
+<th scope='col' width='67' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Textbooks</th>
+<th scope='col' width='57' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Syllabus</th>
+<th scope='col' width='103' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Instructor Notes</th>
+<th scope='col' width='102' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt13$2' id='SSR_CLSRCH_MTG1$srt13$2' role='button' tabindex='829' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt13$2');" title="Click to sort ascending">Instructor Email</a></th>
+</tr>
+<tr id='trSSR_CLSRCH_MTG1$2_row1' bufnum='0' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSSR_CLSRCH_MTG1$2_row1');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSSR_CLSRCH_MTG1$2_row1');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSSR_CLSRCH_MTG1$2_row1');">
+<td align='left'  height='35' class='PSLEVEL3GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    id='win0divMTG_CLASS_NBR$2'><span id='MTG_CLASS_NBR$span$2'  class='PSHYPERLINK'  title='Class Nbr' ><a name='MTG_CLASS_NBR$2' id='MTG_CLASS_NBR$2'  ptlinktgt='pt_peoplecode' tabindex='836' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASS_NBR$2');"  class='PSHYPERLINK' >12319</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_CLASSNAME$2'><span id='MTG_CLASSNAME$span$2'  class='PSHYPERLINK'  title='View Details' ><a name='MTG_CLASSNAME$2' id='MTG_CLASSNAME$2'  ptlinktgt='pt_peoplecode' tabindex='837' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASSNAME$2');"  class='PSHYPERLINK' >50-DIS<br />Regular</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_DAYTIME$2'><span  class='PSLONGEDITBOX' id='MTG_DAYTIME$2' >Asynchronous</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_ROOM$2'><span  class='PSLONGEDITBOX' id='MTG_ROOM$2' >Online</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divFUL_STU_SS_WRK_LONGVALUE$2'><span  class='PSEDITBOX_DISPONLY' id='FUL_STU_SS_WRK_LONGVALUE$2' >Fully Online</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_INSTR$2'><span  class='PSLONGEDITBOX' id='MTG_INSTR$2' >Daniel Soper</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_TOPIC$2'><span  class='PSLONGEDITBOX' id='MTG_TOPIC$2' >01/23/2027 - 05/14/2027</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_SSR_STATUS_LONG$2'><div  style="min-width:53px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<img src="/cs/CFULPRD/86210/PS_CS_STATUS_CLOSED_ICN_1.gif" width="16" height="16" alt="Closed" STYLE="vertical-align:middle;text-align:center;margin-left:12px">
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='center'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_DESCRLONG1$2'><div  style="min-width:133px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<p><a href = "mailto: dsoper@fullerton.edu">dsoper@fullerton.edu</A><BR> </p>
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+</table>
+</DIV>
+</td>
+</tr>
+<tr>
+<td height='3' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='3'></td>
+</tr>
+<tr>
+<td height='63'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRSLT_WRK_GROUPBOX3$3'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='1637'>
+<tr><td width='1635'>
+<table role='presentation'  border='0' id='ACE_SSR_CLSRSLT_WRK_GROUPBOX3$3' cellpadding='0' cellspacing='0' cols='3' width='1684' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='0' height='0'></td>
+<td width='1683'></td>
+<td width='2'></td>
+</tr>
+<tr>
+<td height='55'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divSSR_CLSRCH_MTG1$3'><div class='PTCPGRIDTITLE' onclick='javascript:if(event.target.id == this.firstElementChild.firstElementChild.id) { return true; } else return((this.firstElementChild &amp;&amp; this.firstElementChild.firstElementChild) != null ? this.firstElementChild.firstElementChild.click() : false);'  align='left' >  </div>
+<table cellspacing='0' class='PSLEVEL1GRIDNBONBO'  id='SSR_CLSRCH_MTG1$scroll$3' dir='ltr' cols='13' width='1959' cellpadding='2'>
+<tr>
+<th scope='col' width='30' align='left' class='PSLEVEL1GRIDCOLUMNHDR PSGRIDFIRSTCOLUMN' ><a name='SSR_CLSRCH_MTG1$srt0$3' id='SSR_CLSRCH_MTG1$srt0$3' role='button' tabindex='1008' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt0$3');" title="Click to sort ascending">Class</a></th>
+<th scope='col' width='80' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt1$3' id='SSR_CLSRCH_MTG1$srt1$3' role='button' tabindex='1009' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt1$3');" title="Click to sort ascending">Section</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt2$3' id='SSR_CLSRCH_MTG1$srt2$3' role='button' tabindex='1010' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt2$3');" title="Click to sort ascending">Days &amp; Times</a></th>
+<th scope='col' width='91' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt3$3' id='SSR_CLSRCH_MTG1$srt3$3' role='button' tabindex='1011' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt3$3');" title="Click to sort ascending">Room</a></th>
+<th scope='col' width='103' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt4$3' id='SSR_CLSRCH_MTG1$srt4$3' role='button' tabindex='1012' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt4$3');" title="Click to sort ascending">Instruction Mode</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt5$3' id='SSR_CLSRCH_MTG1$srt5$3' role='button' tabindex='1013' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt5$3');" title="Click to sort ascending">Instructor</a></th>
+<th scope='col' width='94' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt6$3' id='SSR_CLSRCH_MTG1$srt6$3' role='button' tabindex='1014' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt6$3');" title="Click to sort ascending">Meeting Dates</a></th>
+<th scope='col' width='41' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt7$3' id='SSR_CLSRCH_MTG1$srt7$3' role='button' tabindex='1015' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt7$3');" title="Click to sort ascending">Status</a></th>
+<th scope='col' width='98' align='left' class='PSLEVEL1GRIDCOLUMNHDR' >&nbsp;</th>
+<th scope='col' width='67' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Textbooks</th>
+<th scope='col' width='57' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Syllabus</th>
+<th scope='col' width='103' align='CENTER' class='PSLEVEL1GRIDCOLUMNHDR' >Instructor Notes</th>
+<th scope='col' width='102' align='left' class='PSLEVEL1GRIDCOLUMNHDR' ><a name='SSR_CLSRCH_MTG1$srt13$3' id='SSR_CLSRCH_MTG1$srt13$3' role='button' tabindex='1021' class='PSLEVEL1GRIDCOLUMNHDR' href="javascript:submitAction_win0(document.win0,'SSR_CLSRCH_MTG1$srt13$3');" title="Click to sort ascending">Instructor Email</a></th>
+</tr>
+<tr id='trSSR_CLSRCH_MTG1$3_row1' bufnum='0' valign='center' onClick="HighLightTR('rgb(238,238,238)','','trSSR_CLSRCH_MTG1$3_row1');" onMouseOver="hoverLightTR('rgb(253,255,200)','',0,'trSSR_CLSRCH_MTG1$3_row1');" onmouseout="hoverLightTR('rgb(253,255,200)','',1,'trSSR_CLSRCH_MTG1$3_row1');">
+<td align='left'  height='35' class='PSLEVEL3GRIDODDROW PSGRIDFIRSTCOLUMN' >
+<DIV    id='win0divMTG_CLASS_NBR$3'><span id='MTG_CLASS_NBR$span$3'  class='PSHYPERLINK'  title='Class Nbr' ><a name='MTG_CLASS_NBR$3' id='MTG_CLASS_NBR$3'  ptlinktgt='pt_peoplecode' tabindex='1028' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASS_NBR$3');"  class='PSHYPERLINK' >13013</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_CLASSNAME$3'><span id='MTG_CLASSNAME$span$3'  class='PSHYPERLINK'  title='View Details' ><a name='MTG_CLASSNAME$3' id='MTG_CLASSNAME$3'  ptlinktgt='pt_peoplecode' tabindex='1029' onclick='javascript:cancelBubble(event);' href="javascript:submitAction_win0(document.win0,'MTG_CLASSNAME$3');"  class='PSHYPERLINK' >51-DIS<br />Regular</a></span></DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_DAYTIME$3'><span  class='PSLONGEDITBOX' id='MTG_DAYTIME$3' >MoWe 4:00PM - 5:15PM</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_ROOM$3'><span  class='PSLONGEDITBOX' id='MTG_ROOM$3' >LH 319 - Lect/Computer Lab</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divFUL_STU_SS_WRK_LONGVALUE$3'><span  class='PSEDITBOX_DISPONLY' id='FUL_STU_SS_WRK_LONGVALUE$3' >In Person</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_INSTR$3'><span  class='PSLONGEDITBOX' id='MTG_INSTR$3' >Mehdi Davoodi</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divMTG_TOPIC$3'><span  class='PSLONGEDITBOX' id='MTG_TOPIC$3' >01/23/2027 - 05/14/2027</span>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_SSR_STATUS_LONG$3'><div  style="min-width:53px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<img src="/cs/CFULPRD/86210/PS_CS_STATUS_CLOSED_ICN_1.gif" width="16" height="16" alt="Closed" STYLE="vertical-align:middle;text-align:center;margin-left:12px">
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+<td class='PSLEVEL3GRIDODDROW'  align='center'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='CENTER'  style='white-space:nowrap;' class='PSLEVEL3GRIDODDROW' >
+&nbsp;
+</td>
+<td class='PSLEVEL3GRIDODDROW'  align='left'  class='PSLEVEL3GRIDODDROW' >
+<DIV    id='win0divDERIVED_CLSRCH_DESCRLONG1$3'><div  style="min-width:133px; " >
+<!-- Begin HTML Area Name Undisclosed -->
+<p><a href = "mailto: mdavoodi@fullerton.edu">mdavoodi@fullerton.edu</A><BR> </p>
+<!-- End HTML Area -->
+</div>
+</DIV></td>
+</tr>
+</table>
+</DIV>
+</td>
+</tr>
+<tr>
+<td height='3' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='3' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='9' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='8' colspan='14'></td>
+</tr>
+<tr>
+<td height='28' colspan='5'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField$6$'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='204'>
+<tr><td width='201'>
+<table role='presentation'  border='0' id='ACE_$ICField$6$' cellpadding='0' cellspacing='0' cols='2' width='207' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='203'></td>
+</tr>
+<tr>
+<td height='23'></td>
+<td nowrap='nowrap'  valign='top' align='left'>
+<DIV    id='win0divCLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH$3$'><a role='presentation' class='PSPUSHBUTTON Left' onclick='javascript:if(event.target.id == this.firstChild.firstChild.id) { return true; } else return((this.firstChild &amp;&amp; this.firstChild.firstChild) != null ? this.firstChild.firstChild.click() : false);'><span style='background-Color: transparent;'><input type='button' name='CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH$3$' id='CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH$3$' tabindex='1215' value='New Search'  class='PSPUSHBUTTON' style='width:185px; ' onclick="submitAction_win0(document.win0,this.id,event);" title='Start a New Search'  /></span></a></DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+<td  valign='top' align='left'>
+<DIV    id='win0div$ICField$7$'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='204'>
+<tr><td width='201'>
+<table role='presentation'  border='0' id='ACE_$ICField$7$' cellpadding='0' cellspacing='0' cols='2' width='207' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='8' height='0'></td>
+<td width='198'></td>
+</tr>
+<tr>
+<td height='23'></td>
+<td nowrap='nowrap'  valign='top' align='left'>
+<DIV    id='win0divCLASS_SRCH_WRK2_SSR_PB_MODIFY$5$'><a role='presentation' class='PSPUSHBUTTON Left' onclick='javascript:if(event.target.id == this.firstChild.firstChild.id) { return true; } else return((this.firstChild &amp;&amp; this.firstChild.firstChild) != null ? this.firstChild.firstChild.click() : false);'><span style='background-Color: transparent;'><input type='button' name='CLASS_SRCH_WRK2_SSR_PB_MODIFY$5$' id='CLASS_SRCH_WRK2_SSR_PB_MODIFY$5$' tabindex='1216' value='Modify Search'  class='PSPUSHBUTTON' style='width:185px; ' onclick="submitAction_win0(document.win0,this.id,event);" /></span></a></DIV></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='10' colspan='14'></td>
+</tr>
+<tr>
+<td height='39' colspan='2'></td>
+<td colspan='9'  valign='top' align='left'>
+<DIV    id='win0divDERIVED_CLSRCH_SSR_GROUP_FTR1'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='820'>
+<tr><td width='817'>
+<table role='presentation'  border='0' id='ACE_DERIVED_CLSRCH_SSR_GROUP_FTR1' cellpadding='0' cellspacing='0' cols='3' width='842' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='3' height='0'></td>
+<td width='820'></td>
+<td width='17'></td>
+</tr>
+<tr>
+<td height='17'></td>
+<td  valign='top' align='left'>
+<DIV    id='win0divDERIVED_SSTSNAV_GROUP_BOX$19$'><table cellpadding='2' cellspacing='0' cols='1'  class='PABACKGROUNDINVISIBLEWBO'  width='795'>
+<tr><td width='793'>
+<table role='presentation'  border='0' id='ACE_DERIVED_SSTSNAV_GROUP_BOX$19$' cellpadding='0' cellspacing='0' cols='3' width='816' class='PABACKGROUNDINVISIBLE PTCPGROUPBOXWBO' style='border-style:none' >
+<tr>
+<td width='6' height='0'></td>
+<td width='780'></td>
+<td width='30'></td>
+</tr>
+<tr>
+<td height='12'></td>
+<td  valign='top' align='left'>
+<hr width='100%' align='left'  class='PSHORIZONTALRULE' />
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='9' colspan='3'></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</DIV></td>
+</tr>
+<tr>
+<td height='4' colspan='14'></td>
+</tr>
+</table>
+</DIV>
+</td></tr>
+</table>
+<div id='pt_dragtxt' class='PSLEVEL1GRIDCOLUMNHDR'></div><div onmouseup='ptGridResizeObj_win0.TDselUp();' onmousemove='ptGridResizeObj_win0.TDselMove();' id='pt_dragResize' onmouseout='ptGridResizeObj_win0.dragTD=false;' onmbouseover='ptGridResizeObj_win0.dragTD=true;'></div>
+
+nMaxSavedStates=5;
+sHistURL="https://cmsweb.fullerton.edu/psc/CFULPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?page=SSR_CLSRCH_RSLT&";
+bCloseModal = false;
+bICList = false;
+bHtml5Doc = true;
+bClearBackState=false;
+bPageTransfered=true;
+bTransferAnimate=false;
+UpdateHistory('', '', 'returntolastpage@0', 'SSR_CLSRCH_RSLT', 0, '', 1, 0);
+AddToHistory('Search Results', '', 'returntolastpage@0', 'SSR_CLSRCH_RSLT', 3, 0, 1, 0,'', 1, '', 0);
+corsHistoryTansaction();
+bCleanHtml = false;
+bDefer = true;
+document.hiddenFldArr_win0 =new Array('ICType','ICElementNum','ICStateNum','ICAction','ICModelCancel','ICXPos','ICYPos','ResponsetoDiffFrame','TargetFrameName','FacetPath','TA_BuildChoices','SP_FldName','SP_FldValues','PrmtTbl','PrmtTbl_fn','PrmtTbl_fv','TA_SkipFldNms','ICFocus','ICSaveWarningFilter','ICChanged','ICSkipPending','ICAutoSave','ICResubmit','ICSID','ICActionPrompt','EnableSmartPrompt','EnableSmartSelect','ICBcDomData','ICPanelName','ICFind','ICAddCount','ICAppClsData');
+document.chgFldArr_win0 = new Array();
+document.spFldArr_win0 = new Array();
+bCDATA = false;
+bAccessibleLayout = false;
+bGenDomInfo = false;
